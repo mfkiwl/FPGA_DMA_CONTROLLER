@@ -51,6 +51,7 @@ module DMA_READ_CTRL(
     reg [31:0] SA;
     reg [31:0] MSB;
     reg [31:0] len;
+    reg        start_q;
     always @(posedge clk)begin 
         if(rst) begin 
             SA <= 32'd0;
@@ -77,6 +78,16 @@ module DMA_READ_CTRL(
             len <= byte_length;
         end else begin
             len <= start;
+        end
+    end
+
+    always @(posedge clk ) begin
+        if(rst)begin
+            start_q <= 32'd0;
+        end else if(start == 1'b1)begin
+            start_q <= 1'b1;
+        end else begin
+            start_q <= 1'b0;
         end
     end
 
