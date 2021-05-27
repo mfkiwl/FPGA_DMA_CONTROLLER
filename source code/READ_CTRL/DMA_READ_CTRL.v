@@ -22,14 +22,30 @@
 
 module DMA_READ_CTRL(
 
-input           clk             ,
-input           rst             ,
-
-input   [63:0]  dest_addr       ,
-input   [31:0]  byte_length     ,
-input           start       
-
-
+    input           clk                 ,
+    input           rst                 ,
+    
+    input   [63:0]  dest_addr           ,
+    input   [31:0]  byte_length         ,
+    input           start               ,  
+    input           mm2s_introut        ,   
+    
+    input           m_axi_lite_awready  ,
+    input           m_axi_lite_wready   ,
+    input   [1 : 0] m_axi_lite_bresp    ,
+    input           m_axi_lite_bvalid   ,
+    input   [31:0]  m_axi_lite_rdata    ,
+    input           m_axi_lite_arready  ,
+    input   [1:0]   m_axi_lite_rresp    ,
+    input           m_axi_lite_rvalid   ,
+    output  [9:0]   m_axi_lite_awaddr   ,
+    output  [31:0]  m_axi_lite_wdata    ,
+    output          m_axi_lite_awvalid  ,      
+    output          m_axi_lite_wvalid   ,              
+    output          m_axi_lite_bready   ,             
+    output  [9:0]   m_axi_lite_araddr   ,
+    output          m_axi_lite_arvalid  ,
+    output          m_axi_lite_rready
 
     );
     reg [31:0] SA;
@@ -66,5 +82,5 @@ input           start
 
 
 
-    
+
 endmodule
