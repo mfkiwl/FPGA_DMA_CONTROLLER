@@ -31,22 +31,10 @@ module MM2S_LITE_CTRL(
     input   [31:0]  LENGTH_DATA         ,
     input           mm2s_introut        , 
 
-    input           m_axi_lite_awready  ,
-    input           m_axi_lite_wready   ,
-    input   [1 : 0] m_axi_lite_bresp    ,
-    input           m_axi_lite_bvalid   ,
-    input   [31:0]  m_axi_lite_rdata    ,
-    input           m_axi_lite_arready  ,
-    input   [1:0]   m_axi_lite_rresp    ,
-    input           m_axi_lite_rvalid   ,
-    output  [9:0]   m_axi_lite_awaddr   ,
-    output  [31:0]  m_axi_lite_wdata    ,
-    output          m_axi_lite_awvalid  ,      
-    output          m_axi_lite_wvalid   ,              
-    output          m_axi_lite_bready   ,             
-    output  [9:0]   m_axi_lite_araddr   ,
-    output          m_axi_lite_arvalid  ,
-    output          m_axi_lite_rready
+    output  [31:0]  lite_wdata          ,
+    output  [9:0]   lite_awaddr         ,
+    output          lite_valid          ,  
+    input           lite_end    
     );
 
 
