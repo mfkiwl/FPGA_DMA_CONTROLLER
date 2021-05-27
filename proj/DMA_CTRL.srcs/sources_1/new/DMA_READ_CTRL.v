@@ -22,5 +22,49 @@
 
 module DMA_READ_CTRL(
 
+input           clk             ,
+input           rst             ,
+
+input   [63:0]  dest_addr       ,
+input   [31:0]  byte_length     ,
+input           start       
+
+
+
     );
+    reg [31:0] SA;
+    reg [31:0] MSB;
+    reg [31:0] len;
+    always @(posedge clk)begin 
+        if(rst) begin 
+            SA <= 32'd0;
+        end else if(start == 1'b1)begin
+            SA <= dest_addr[31:0];
+        end else begin
+            SA <= SA;
+        end
+    end
+    always @(posedge clk ) begin
+        if(rst)begin
+            
+            MSB <= 32'd0;
+        end else if(start == 1'b1)begin
+            MSB <= dest_addr[63:32];
+        end else begin
+            MSB <= MSB;
+        end
+    end
+    always @(posedge clk ) begin
+        if(rst)begin
+            len <= 32'd0;
+        end else if(start == 1'b1)begin
+            len <= byte_length;
+        end else begin
+            len <= start;
+        end
+    end
+
+
+
+    
 endmodule
