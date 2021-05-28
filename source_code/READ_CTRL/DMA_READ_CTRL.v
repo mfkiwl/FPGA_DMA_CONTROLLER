@@ -26,7 +26,7 @@ module DMA_READ_CTRL(
     input           rst                 ,
     
     input   [63:0]  dest_addr           ,
-    input   [31:0]  byte_length         ,
+    input   [31:0]  byte_num            ,
     input           start               ,  
     input           mm2s_introut        ,   
     
@@ -75,7 +75,7 @@ module DMA_READ_CTRL(
         if(rst)begin
             len <= 32'd0;
         end else if(start == 1'b1)begin
-            len <= byte_length;
+            len <= byte_num;
         end else begin
             len <= start;
         end
