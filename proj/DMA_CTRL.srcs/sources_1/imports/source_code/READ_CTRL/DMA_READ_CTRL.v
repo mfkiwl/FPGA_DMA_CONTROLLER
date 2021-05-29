@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module DMA_WRITE_CTRL(
+module DMA_READ_CTRL(
 
     input           clk                 ,
     input           rst                 ,
@@ -28,7 +28,7 @@ module DMA_WRITE_CTRL(
     input   [63:0]  dest_addr           ,
     input   [31:0]  byte_num            ,
     input           start               ,  
-    input           s2mm_introut        ,   
+    input           mm2s_introut        ,   
     
     input           m_axi_lite_awready  ,
     input           m_axi_lite_wready   ,
@@ -48,17 +48,17 @@ module DMA_WRITE_CTRL(
     output          m_axi_lite_rready
 
     );
-    reg [31:0] DA;
+    reg [31:0] SA;
     reg [31:0] MSB;
     reg [31:0] len;
     reg        start_q;
     always @(posedge clk)begin 
         if(rst) begin 
-            DA <= 32'd0;
+            SA <= 32'd0;
         end else if(start == 1'b1)begin
-            DA <= dest_addr[31:0];
+            SA <= dest_addr[31:0];
         end else begin
-            DA <= DA;
+            SA <= SA;
         end
     end
     always @(posedge clk ) begin
@@ -92,22 +92,22 @@ module DMA_WRITE_CTRL(
     end
 
 
-// SS2M_CTRL Inputs            
+// MM2S_CTRL Inputs            
 wire   lite_end;
 
-// SS2M_CTRL Outputs
+// MM2S_CTRL Outputs
 wire  [31:0]  lite_wdata;
 wire  [9:0]  lite_awaddr;
 wire  lite_valid;
 
-S2MM_CTRL  u_S2MM_CTRL (
+MM2S_CTRL  u_MM2S_CTRL (
     .clk                     ( clk            ),
     .rst                     ( rst            ),
     .start                   ( start_q        ),
-    .DA_DATA                 ( DA             ),
+    .SA_DATA                 ( SA             ),
     .MSB_DATA                ( MSB            ),
     .LENGTH_DATA             ( len            ),
-    .s2mm_introut            ( s2mm_introut   ),
+    .mm2s_introut            ( mm2s_introut   ),
     .lite_end                ( lite_end       ),
 
     .lite_wdata              ( lite_wdata     ),
