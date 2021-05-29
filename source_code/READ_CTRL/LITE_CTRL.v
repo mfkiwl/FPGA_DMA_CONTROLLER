@@ -6,7 +6,7 @@ module LITE_CTRL (
     input   [31:0]  lite_wdata          ,
     input   [9:0]   lite_awaddr         ,
     input           lite_valid          ,  
-    output          lite_end            ,   
+    output  reg     lite_end            ,   
     
     input           m_axi_lite_awready  ,
     input           m_axi_lite_wready   ,
@@ -51,25 +51,41 @@ always @(*) begin
     next_state = IDLE;
     case (current_state)
         IDLE: begin
-            
+            if(lite_valid)begin
+                next_state = WRITE_ADDR;
+            end else begin
+                next_state = IDLE;
+            end
         end 
         WRITE_ADDR: begin
-            
+            if(m_axi_lite_awready & m_axi_lite_awvalid)begin
+                next_state = CLEAR_ADDR;
+            end else begin
+                next_state = WRITE_ADDR;
+            end
         end 
         CLEAR_ADDR: begin
-            
+            next_state = WRITE_DATA;
         end 
         WRITE_DATA: begin
-            
+            if(m_axi_lite_wready & m_axi_lite_wvalid)begin
+                next_state = CLEAR_DATA;
+            end else begin
+                next_state = WRITE_DATA;
+            end
         end 
         CLEAR_DATA: begin
-            
+            next_state = WAIT_RESP;
         end 
         WAIT_RESP: begin
-            
+            if(m_axi_lite_bvalid)begin
+                next_state = CLEAR_RESP;
+            end else begin
+                next_state = WAIT_RESP;
+            end
         end 
         CLEAR_RESP: begin
-            
+            next_state = IDLE;            
         end 
         default: begin
             next_state = IDLE;
@@ -77,5 +93,15 @@ always @(*) begin
     endcase
 end
 
+wire  lite_end_q;
+reg lite_end_qq;
+assign m_axi_lite_awvalid = (current_state == WRITE_ADDR) ? 1'b1 : 1'b0;
+assign m_axi_lite_wvalid = (current_state == WRITE_DATA) ? 1'b1 : 1'b0;
+assign m_axi_lite_bready = (current_state == WAIT_RESP) ? 1'b1 : 1'b0;
+assign lite_end_q = (current_state == CLEAR_RESP && next_state == IDLE) ? 1'b1:1'b0;
 
+always @(posedge clk ) begin
+    lite_end_qq <= lite_end_q;
+    lite_end = lite_end_qq;
+end
 endmodule

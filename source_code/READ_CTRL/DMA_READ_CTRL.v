@@ -103,10 +103,10 @@ wire  lite_valid;
 MM2S_CTRL  u_MM2S_CTRL (
     .clk                     ( clk            ),
     .rst                     ( rst            ),
-    .start                   ( start_q          ),
-    .SA_DATA                 ( SA        ),
-    .MSB_DATA                ( MSB       ),
-    .LENGTH_DATA             ( len    ),
+    .start                   ( start_q        ),
+    .SA_DATA                 ( SA             ),
+    .MSB_DATA                ( MSB            ),
+    .LENGTH_DATA             ( len            ),
     .mm2s_introut            ( mm2s_introut   ),
     .lite_end                ( lite_end       ),
 
@@ -114,5 +114,36 @@ MM2S_CTRL  u_MM2S_CTRL (
     .lite_awaddr             ( lite_awaddr    ),
     .lite_valid              ( lite_valid     )
 );
+
+
+
+
+LITE_CTRL  u_LITE_CTRL (
+    .clk                     ( clk                  ),
+    .rst                     ( rst                  ),
+    .lite_wdata              ( lite_wdata           ),
+    .lite_awaddr             ( lite_awaddr          ),
+    .lite_valid              ( lite_valid           ),
+    .m_axi_lite_awready      ( m_axi_lite_awready   ),
+    .m_axi_lite_wready       ( m_axi_lite_wready    ),
+    .m_axi_lite_bresp        ( m_axi_lite_bresp     ),
+    .m_axi_lite_bvalid       ( m_axi_lite_bvalid    ),
+    .m_axi_lite_rdata        ( m_axi_lite_rdata     ),
+    .m_axi_lite_arready      ( m_axi_lite_arready   ),
+    .m_axi_lite_rresp        ( m_axi_lite_rresp     ),
+    .m_axi_lite_rvalid       ( m_axi_lite_rvalid    ),
+
+    .lite_end                ( lite_end             ),
+    .m_axi_lite_awaddr       ( m_axi_lite_awaddr    ),
+    .m_axi_lite_wdata        ( m_axi_lite_wdata     ),
+    .m_axi_lite_awvalid      ( m_axi_lite_awvalid   ),
+    .m_axi_lite_wvalid       ( m_axi_lite_wvalid    ),
+    .m_axi_lite_bready       ( m_axi_lite_bready    ),
+    .m_axi_lite_araddr       ( m_axi_lite_araddr    ),
+    .m_axi_lite_arvalid      ( m_axi_lite_arvalid   ),
+    .m_axi_lite_rready       ( m_axi_lite_rready    )
+);
+
+
 
 endmodule
