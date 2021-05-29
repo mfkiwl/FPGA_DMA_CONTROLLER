@@ -77,7 +77,7 @@ module DMA_READ_CTRL(
         end else if(start == 1'b1)begin
             len <= byte_num;
         end else begin
-            len <= start;
+            len <= byte_num;
         end
     end
 
@@ -92,6 +92,27 @@ module DMA_READ_CTRL(
     end
 
 
+// MM2S_CTRL Inputs            
+wire   lite_end;
 
+// MM2S_CTRL Outputs
+wire  [31:0]  lite_wdata;
+wire  [9:0]  lite_awaddr;
+wire  lite_valid;
+
+MM2S_CTRL  u_MM2S_CTRL (
+    .clk                     ( clk            ),
+    .rst                     ( rst            ),
+    .start                   ( start_q          ),
+    .SA_DATA                 ( SA        ),
+    .MSB_DATA                ( MSB       ),
+    .LENGTH_DATA             ( len    ),
+    .mm2s_introut            ( mm2s_introut   ),
+    .lite_end                ( lite_end       ),
+
+    .lite_wdata              ( lite_wdata     ),
+    .lite_awaddr             ( lite_awaddr    ),
+    .lite_valid              ( lite_valid     )
+);
 
 endmodule
