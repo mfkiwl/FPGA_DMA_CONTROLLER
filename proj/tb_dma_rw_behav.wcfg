@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_dma_rw_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_dma_pkg" />
+            <top_module name="glbl" />
+            <top_module name="lib_pkg" />
+            <top_module name="tb_dma_rw" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="543001fs"></ZoomEndTime>
+      <Cursor1Time time="5000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="328"></NameColumnWidth>
+      <ValueColumnWidth column_width="157"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group95" type="group">
+      <obj_property name="label">bram</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/blk_mem_gen_0/clka" type="logic">
+         <obj_property name="ElementShortName">clka</obj_property>
+         <obj_property name="ObjectShortName">clka</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/blk_mem_gen_0/rsta" type="logic">
+         <obj_property name="ElementShortName">rsta</obj_property>
+         <obj_property name="ObjectShortName">rsta</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/blk_mem_gen_0/ena" type="logic">
+         <obj_property name="ElementShortName">ena</obj_property>
+         <obj_property name="ObjectShortName">ena</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/blk_mem_gen_0/wea" type="array">
+         <obj_property name="ElementShortName">wea[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wea[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/blk_mem_gen_0/addra" type="array">
+         <obj_property name="ElementShortName">addra[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/blk_mem_gen_0/dina" type="array">
+         <obj_property name="ElementShortName">dina[63:0]</obj_property>
+         <obj_property name="ObjectShortName">dina[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/blk_mem_gen_0/douta" type="array">
+         <obj_property name="ElementShortName">douta[63:0]</obj_property>
+         <obj_property name="ObjectShortName">douta[63:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group94" type="group">
+      <obj_property name="label">tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_dma_rw/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/READ_DATA_tready" type="logic">
+         <obj_property name="ElementShortName">READ_DATA_tready</obj_property>
+         <obj_property name="ObjectShortName">READ_DATA_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WRITE_DATA_tdata" type="array">
+         <obj_property name="ElementShortName">WRITE_DATA_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">WRITE_DATA_tdata[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WRITE_DATA_tkeep" type="array">
+         <obj_property name="ElementShortName">WRITE_DATA_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">WRITE_DATA_tkeep[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WRITE_DATA_tlast" type="logic">
+         <obj_property name="ElementShortName">WRITE_DATA_tlast</obj_property>
+         <obj_property name="ObjectShortName">WRITE_DATA_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WRITE_DATA_tvalid" type="logic">
+         <obj_property name="ElementShortName">WRITE_DATA_tvalid</obj_property>
+         <obj_property name="ObjectShortName">WRITE_DATA_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/read_byte_num" type="array">
+         <obj_property name="ElementShortName">read_byte_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">read_byte_num[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/read_dest_addr" type="array">
+         <obj_property name="ElementShortName">read_dest_addr[63:0]</obj_property>
+         <obj_property name="ObjectShortName">read_dest_addr[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/read_start" type="logic">
+         <obj_property name="ElementShortName">read_start</obj_property>
+         <obj_property name="ObjectShortName">read_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/write_byte_num" type="array">
+         <obj_property name="ElementShortName">write_byte_num[31:0]</obj_property>
+         <obj_property name="ObjectShortName">write_byte_num[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/write_dest_addr" type="array">
+         <obj_property name="ElementShortName">write_dest_addr[63:0]</obj_property>
+         <obj_property name="ObjectShortName">write_dest_addr[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/write_start" type="logic">
+         <obj_property name="ElementShortName">write_start</obj_property>
+         <obj_property name="ObjectShortName">write_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/READ_DATA_tdata" type="array">
+         <obj_property name="ElementShortName">READ_DATA_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_DATA_tdata[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/READ_DATA_tkeep" type="array">
+         <obj_property name="ElementShortName">READ_DATA_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_DATA_tkeep[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/READ_DATA_tlast" type="logic">
+         <obj_property name="ElementShortName">READ_DATA_tlast</obj_property>
+         <obj_property name="ObjectShortName">READ_DATA_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/READ_DATA_tvalid" type="logic">
+         <obj_property name="ElementShortName">READ_DATA_tvalid</obj_property>
+         <obj_property name="ObjectShortName">READ_DATA_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WRITE_DATA_tready" type="logic">
+         <obj_property name="ElementShortName">WRITE_DATA_tready</obj_property>
+         <obj_property name="ObjectShortName">WRITE_DATA_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/read_introut" type="logic">
+         <obj_property name="ElementShortName">read_introut</obj_property>
+         <obj_property name="ObjectShortName">read_introut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/write_introut" type="logic">
+         <obj_property name="ElementShortName">write_introut</obj_property>
+         <obj_property name="ObjectShortName">write_introut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/current_state" type="array">
+         <obj_property name="ElementShortName">current_state[6:0]</obj_property>
+         <obj_property name="ObjectShortName">current_state[6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[6:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[6:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/start_cnt" type="array">
+         <obj_property name="ElementShortName">start_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">start_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/write_cnt" type="array">
+         <obj_property name="ElementShortName">write_cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">write_cnt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/read_cnt" type="array">
+         <obj_property name="ElementShortName">read_cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">read_cnt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[6:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WRITE_CMD" type="array">
+         <obj_property name="ElementShortName">WRITE_CMD[6:0]</obj_property>
+         <obj_property name="ObjectShortName">WRITE_CMD[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WRITE_DATA" type="array">
+         <obj_property name="ElementShortName">WRITE_DATA[6:0]</obj_property>
+         <obj_property name="ObjectShortName">WRITE_DATA[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/WAIT" type="array">
+         <obj_property name="ElementShortName">WAIT[6:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/READ_CMD" type="array">
+         <obj_property name="ElementShortName">READ_CMD[6:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_CMD[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/READ_DATA" type="array">
+         <obj_property name="ElementShortName">READ_DATA[6:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_DATA[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/END" type="array">
+         <obj_property name="ElementShortName">END[6:0]</obj_property>
+         <obj_property name="ObjectShortName">END[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/DATA_CNT" type="array">
+         <obj_property name="ElementShortName">DATA_CNT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_CNT[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group186" type="group">
+      <obj_property name="label">read_dma</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_aclk" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_aclk" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_aclk</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/axi_resetn" type="logic">
+         <obj_property name="ElementShortName">axi_resetn</obj_property>
+         <obj_property name="ObjectShortName">axi_resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_awvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_awready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_awaddr" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_awaddr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awaddr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_wvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_wready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_wdata" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_bresp" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_bvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_bready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_arvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_arready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_araddr" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_araddr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_araddr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_rvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_rready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_rdata" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/s_axi_lite_rresp" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_araddr" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_arlen" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_arsize" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_arburst" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_arprot" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_arcache" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_arvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_arvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_arready" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_arready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_rdata" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_rdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_rresp" type="array">
+         <obj_property name="ElementShortName">m_axi_mm2s_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_rlast" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_rlast</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_rvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_rvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axi_mm2s_rready" type="logic">
+         <obj_property name="ElementShortName">m_axi_mm2s_rready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_mm2s_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/mm2s_prmry_reset_out_n" type="logic">
+         <obj_property name="ElementShortName">mm2s_prmry_reset_out_n</obj_property>
+         <obj_property name="ObjectShortName">mm2s_prmry_reset_out_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axis_mm2s_tdata" type="array">
+         <obj_property name="ElementShortName">m_axis_mm2s_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tdata[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axis_mm2s_tkeep" type="array">
+         <obj_property name="ElementShortName">m_axis_mm2s_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tkeep[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axis_mm2s_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axis_mm2s_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/m_axis_mm2s_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_mm2s_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_mm2s_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/mm2s_introut" type="logic">
+         <obj_property name="ElementShortName">mm2s_introut</obj_property>
+         <obj_property name="ObjectShortName">mm2s_introut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/axi_dma_tstvec" type="array">
+         <obj_property name="ElementShortName">axi_dma_tstvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_dma_tstvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/M_AXIS_MM2S" type="protoinst">
+         <obj_property name="ElementShortName">M_AXIS_MM2S</obj_property>
+         <obj_property name="ObjectShortName">M_AXIS_MM2S</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/M_AXI_MM2S" type="protoinst">
+         <obj_property name="ElementShortName">M_AXI_MM2S</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_MM2S</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_0/S_AXI_LITE" type="protoinst">
+         <obj_property name="ElementShortName">S_AXI_LITE</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_LITE</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group283" type="group">
+      <obj_property name="label">write_dam</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_aclk" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_aclk</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_aclk" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_aclk</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/axi_resetn" type="logic">
+         <obj_property name="ElementShortName">axi_resetn</obj_property>
+         <obj_property name="ObjectShortName">axi_resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_awvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_awready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_awaddr" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_awaddr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_awaddr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_wvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_wready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_wdata" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_bresp" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_bvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_bready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_arvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_arready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_araddr" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_araddr[9:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_araddr[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_rvalid" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_rready" type="logic">
+         <obj_property name="ElementShortName">s_axi_lite_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_rdata" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axi_lite_rresp" type="array">
+         <obj_property name="ElementShortName">s_axi_lite_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_lite_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awaddr" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awlen" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awsize" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awburst" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awprot" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awcache" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_awvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_awready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_awready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_awready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_wdata" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_wdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_wstrb" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_wstrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wstrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_wlast" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wlast</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_wvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_wready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_wready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_bresp" type="array">
+         <obj_property name="ElementShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_bvalid" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_bvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/m_axi_s2mm_bready" type="logic">
+         <obj_property name="ElementShortName">m_axi_s2mm_bready</obj_property>
+         <obj_property name="ObjectShortName">m_axi_s2mm_bready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s2mm_prmry_reset_out_n" type="logic">
+         <obj_property name="ElementShortName">s2mm_prmry_reset_out_n</obj_property>
+         <obj_property name="ObjectShortName">s2mm_prmry_reset_out_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axis_s2mm_tdata" type="array">
+         <obj_property name="ElementShortName">s_axis_s2mm_tdata[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tdata[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axis_s2mm_tkeep" type="array">
+         <obj_property name="ElementShortName">s_axis_s2mm_tkeep[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tkeep[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axis_s2mm_tvalid" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axis_s2mm_tready" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s_axis_s2mm_tlast" type="logic">
+         <obj_property name="ElementShortName">s_axis_s2mm_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_s2mm_tlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/s2mm_introut" type="logic">
+         <obj_property name="ElementShortName">s2mm_introut</obj_property>
+         <obj_property name="ObjectShortName">s2mm_introut</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/axi_dma_tstvec" type="array">
+         <obj_property name="ElementShortName">axi_dma_tstvec[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_dma_tstvec[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/M_AXI_S2MM" type="protoinst">
+         <obj_property name="ElementShortName">M_AXI_S2MM</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_S2MM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/S_AXIS_S2MM" type="protoinst">
+         <obj_property name="ElementShortName">S_AXIS_S2MM</obj_property>
+         <obj_property name="ObjectShortName">S_AXIS_S2MM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_dma_1/S_AXI_LITE" type="protoinst">
+         <obj_property name="ElementShortName">S_AXI_LITE</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_LITE</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group646" type="group">
+      <obj_property name="label">axi_interconnect</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/ACLK" type="logic">
+         <obj_property name="ElementShortName">ACLK</obj_property>
+         <obj_property name="ObjectShortName">ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/ARESETN" type="logic">
+         <obj_property name="ElementShortName">ARESETN</obj_property>
+         <obj_property name="ObjectShortName">ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_ACLK" type="logic">
+         <obj_property name="ElementShortName">M00_ACLK</obj_property>
+         <obj_property name="ObjectShortName">M00_ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_ARESETN" type="logic">
+         <obj_property name="ElementShortName">M00_ARESETN</obj_property>
+         <obj_property name="ObjectShortName">M00_ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_araddr" type="array">
+         <obj_property name="ElementShortName">M00_AXI_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arburst" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arcache" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arlen" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arlock" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arprot" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arready" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arsize" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_arvalid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_arvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_arvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awaddr" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awburst" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awcache" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awlen" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awlock" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awlock[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awlock[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awprot" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awready" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awsize" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_awvalid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_awvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_awvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_bid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_bid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_bid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_bready" type="array">
+         <obj_property name="ElementShortName">M00_AXI_bready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_bready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_bresp" type="array">
+         <obj_property name="ElementShortName">M00_AXI_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_bvalid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_bvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_bvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_rdata" type="array">
+         <obj_property name="ElementShortName">M00_AXI_rdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_rdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_rid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_rid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_rid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_rlast" type="array">
+         <obj_property name="ElementShortName">M00_AXI_rlast[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_rlast[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_rready" type="array">
+         <obj_property name="ElementShortName">M00_AXI_rready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_rready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_rresp" type="array">
+         <obj_property name="ElementShortName">M00_AXI_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_rvalid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_rvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_rvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_wdata" type="array">
+         <obj_property name="ElementShortName">M00_AXI_wdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_wdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_wlast" type="array">
+         <obj_property name="ElementShortName">M00_AXI_wlast[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_wlast[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_wready" type="array">
+         <obj_property name="ElementShortName">M00_AXI_wready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_wready[0:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_wstrb" type="array">
+         <obj_property name="ElementShortName">M00_AXI_wstrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_wstrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI_wvalid" type="array">
+         <obj_property name="ElementShortName">M00_AXI_wvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI_wvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_ACLK" type="logic">
+         <obj_property name="ElementShortName">S00_ACLK</obj_property>
+         <obj_property name="ObjectShortName">S00_ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_ARESETN" type="logic">
+         <obj_property name="ElementShortName">S00_ARESETN</obj_property>
+         <obj_property name="ObjectShortName">S00_ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_araddr" type="array">
+         <obj_property name="ElementShortName">S00_AXI_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_araddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_arburst" type="array">
+         <obj_property name="ElementShortName">S00_AXI_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_arcache" type="array">
+         <obj_property name="ElementShortName">S00_AXI_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_arlen" type="array">
+         <obj_property name="ElementShortName">S00_AXI_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_arprot" type="array">
+         <obj_property name="ElementShortName">S00_AXI_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_arready" type="array">
+         <obj_property name="ElementShortName">S00_AXI_arready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_arready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_arsize" type="array">
+         <obj_property name="ElementShortName">S00_AXI_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_arvalid" type="array">
+         <obj_property name="ElementShortName">S00_AXI_arvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_arvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_rdata" type="array">
+         <obj_property name="ElementShortName">S00_AXI_rdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_rdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_rlast" type="array">
+         <obj_property name="ElementShortName">S00_AXI_rlast[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_rlast[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_rready" type="array">
+         <obj_property name="ElementShortName">S00_AXI_rready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_rready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_rresp" type="array">
+         <obj_property name="ElementShortName">S00_AXI_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI_rvalid" type="array">
+         <obj_property name="ElementShortName">S00_AXI_rvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_rvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_ACLK" type="logic">
+         <obj_property name="ElementShortName">S01_ACLK</obj_property>
+         <obj_property name="ObjectShortName">S01_ACLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_ARESETN" type="logic">
+         <obj_property name="ElementShortName">S01_ARESETN</obj_property>
+         <obj_property name="ObjectShortName">S01_ARESETN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awaddr" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awburst" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awcache" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awlen" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awprot" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awready" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awsize" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_awvalid" type="array">
+         <obj_property name="ElementShortName">S01_AXI_awvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_awvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_bready" type="array">
+         <obj_property name="ElementShortName">S01_AXI_bready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_bready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_bresp" type="array">
+         <obj_property name="ElementShortName">S01_AXI_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_bvalid" type="array">
+         <obj_property name="ElementShortName">S01_AXI_bvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_bvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_wdata" type="array">
+         <obj_property name="ElementShortName">S01_AXI_wdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_wdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_wlast" type="array">
+         <obj_property name="ElementShortName">S01_AXI_wlast[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_wlast[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_wready" type="array">
+         <obj_property name="ElementShortName">S01_AXI_wready[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_wready[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_wstrb" type="array">
+         <obj_property name="ElementShortName">S01_AXI_wstrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_wstrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI_wvalid" type="array">
+         <obj_property name="ElementShortName">S01_AXI_wvalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI_wvalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_ACLK_net" type="logic">
+         <obj_property name="ElementShortName">axi_interconnect_0_ACLK_net</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_ACLK_net</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_ARESETN_net" type="logic">
+         <obj_property name="ElementShortName">axi_interconnect_0_ARESETN_net</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_ARESETN_net</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARADDR" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARBURST" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARCACHE" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARLEN" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARPROT" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARREADY" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARSIZE" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_ARVALID" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_ARVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_ARVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_RDATA" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_RDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_RDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_RLAST" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_RLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_RLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_RREADY" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_RREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_RREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_RRESP" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_RRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_RRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s00_couplers_RVALID" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s00_couplers_RVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s00_couplers_RVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWADDR" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWBURST" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWCACHE" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWLEN" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWPROT" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWREADY" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWSIZE" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_AWVALID" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_AWVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_AWVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_BREADY" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_BREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_BREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_BRESP" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_BRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_BRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_BVALID" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_BVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_BVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_WDATA" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_WDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_WDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_WLAST" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_WLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_WLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_WREADY" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_WREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_WREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_WSTRB" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_WSTRB[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_WSTRB[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/axi_interconnect_0_to_s01_couplers_WVALID" type="array">
+         <obj_property name="ElementShortName">axi_interconnect_0_to_s01_couplers_WVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_interconnect_0_to_s01_couplers_WVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARADDR" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARBURST" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARCACHE" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARLEN" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARLOCK" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARLOCK[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARLOCK[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARPROT" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARREADY" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARSIZE" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_ARVALID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_ARVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_ARVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWADDR" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWBURST" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWCACHE" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWLEN" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWLOCK" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWLOCK[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWLOCK[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWPROT" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWREADY" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWSIZE" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_AWVALID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_AWVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_AWVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_BID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_BID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_BID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_BREADY" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_BREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_BREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_BRESP" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_BRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_BRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_BVALID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_BVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_BVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_RDATA" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_RDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_RDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_RID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_RID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_RID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_RLAST" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_RLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_RLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_RREADY" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_RREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_RREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_RRESP" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_RRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_RRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_RVALID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_RVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_RVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_WDATA" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_WDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_WDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_WLAST" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_WLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_WLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_WREADY" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_WREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_WREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_WSTRB" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_WSTRB[7:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_WSTRB[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/m00_couplers_to_axi_interconnect_0_WVALID" type="array">
+         <obj_property name="ElementShortName">m00_couplers_to_axi_interconnect_0_WVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">m00_couplers_to_axi_interconnect_0_WVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARADDR" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARBURST" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARCACHE" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARLEN" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARPROT" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARREADY" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARSIZE" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_ARVALID" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_ARVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_ARVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_RDATA" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_RDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_RDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_RLAST" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_RLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_RLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_RREADY" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_RREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_RREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_RRESP" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_RRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_RRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s00_couplers_to_xbar_RVALID" type="array">
+         <obj_property name="ElementShortName">s00_couplers_to_xbar_RVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_couplers_to_xbar_RVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWADDR" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWBURST" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWCACHE" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWLEN" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWPROT" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWREADY" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWREADY[1:1]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWREADY[1:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWSIZE" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_AWVALID" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_AWVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_AWVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_BREADY" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_BREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_BREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_BRESP" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_BRESP[3:2]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_BRESP[3:2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_BVALID" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_BVALID[1:1]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_BVALID[1:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_WDATA" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_WDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_WDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_WLAST" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_WLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_WLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_WREADY" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_WREADY[1:1]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_WREADY[1:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_WSTRB" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_WSTRB[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_WSTRB[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/s01_couplers_to_xbar_WVALID" type="array">
+         <obj_property name="ElementShortName">s01_couplers_to_xbar_WVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s01_couplers_to_xbar_WVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARADDR" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARBURST" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARCACHE" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARLEN" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARLOCK" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARLOCK[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARLOCK[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARPROT" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARREADY" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARSIZE" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_ARVALID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_ARVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_ARVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWADDR" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWBURST" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWBURST[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWBURST[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWCACHE" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWCACHE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWCACHE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWLEN" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWLEN[7:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWLEN[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWLOCK" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWLOCK[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWLOCK[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWPROT" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWPROT[2:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWPROT[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWREADY" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWSIZE" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_AWVALID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_AWVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_AWVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_BID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_BID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_BID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_BREADY" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_BREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_BREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_BRESP" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_BRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_BRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_BVALID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_BVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_BVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_RDATA" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_RDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_RDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_RID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_RID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_RID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_RLAST" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_RLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_RLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_RREADY" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_RREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_RREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_RRESP" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_RRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_RRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_RVALID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_RVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_RVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_WDATA" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_WDATA[63:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_WDATA[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_WLAST" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_WLAST[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_WLAST[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_WREADY" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_WREADY[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_WREADY[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_WSTRB" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_WSTRB[7:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_WSTRB[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/xbar_to_m00_couplers_WVALID" type="array">
+         <obj_property name="ElementShortName">xbar_to_m00_couplers_WVALID[0:0]</obj_property>
+         <obj_property name="ObjectShortName">xbar_to_m00_couplers_WVALID[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/NLW_xbar_s_axi_awready_UNCONNECTED" type="array">
+         <obj_property name="ElementShortName">NLW_xbar_s_axi_awready_UNCONNECTED[1:0]</obj_property>
+         <obj_property name="ObjectShortName">NLW_xbar_s_axi_awready_UNCONNECTED[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/NLW_xbar_s_axi_bresp_UNCONNECTED" type="array">
+         <obj_property name="ElementShortName">NLW_xbar_s_axi_bresp_UNCONNECTED[3:0]</obj_property>
+         <obj_property name="ObjectShortName">NLW_xbar_s_axi_bresp_UNCONNECTED[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/NLW_xbar_s_axi_bvalid_UNCONNECTED" type="array">
+         <obj_property name="ElementShortName">NLW_xbar_s_axi_bvalid_UNCONNECTED[1:0]</obj_property>
+         <obj_property name="ObjectShortName">NLW_xbar_s_axi_bvalid_UNCONNECTED[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/NLW_xbar_s_axi_wready_UNCONNECTED" type="array">
+         <obj_property name="ElementShortName">NLW_xbar_s_axi_wready_UNCONNECTED[1:0]</obj_property>
+         <obj_property name="ObjectShortName">NLW_xbar_s_axi_wready_UNCONNECTED[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/M00_AXI" type="protoinst">
+         <obj_property name="ElementShortName">M00_AXI</obj_property>
+         <obj_property name="ObjectShortName">M00_AXI</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S00_AXI" type="protoinst">
+         <obj_property name="ElementShortName">S00_AXI</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_dma_rw/u_design_1_wrapper/design_1_i/axi_interconnect_0/S01_AXI" type="protoinst">
+         <obj_property name="ElementShortName">S01_AXI</obj_property>
+         <obj_property name="ObjectShortName">S01_AXI</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
