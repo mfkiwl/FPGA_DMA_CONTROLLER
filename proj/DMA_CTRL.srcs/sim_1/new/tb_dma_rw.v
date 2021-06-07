@@ -31,16 +31,23 @@ reg   rst_n_q;
 reg   rst_n_qq;
 initial begin
     clk = 1'b0;
-    rst_n_q = 1'b0;
-    #35
-    rst_n_q = 1'b1;
 end
 
 always #5 clk = ~clk;
-always @(posedge clk ) begin
-    rst_n_qq <= rst_n_q;
-    rst_n <= rst_n_qq;
-end
+wire clk_out1;
+wire locked;
+clk_wiz_0 instance_name
+   (
+    // Clock out ports
+    .clk_out1(clk_out1),     // output clk_out1
+    // Status and control signals
+    .locked(locked),       // output locked
+   // Clock in ports
+    .clk_in1(clk));      // input clk_in1
+//always @(posedge clk ) begin
+//    rst_n_qq <= rst_n_q;
+//    rst_n <= rst_n_qq;
+//end
 
     // design_1_wrapper Inputs    
 wire  READ_DATA_tready;       
@@ -72,11 +79,11 @@ design_1_wrapper  u_design_1_wrapper (
     .WRITE_DATA_tkeep        ( WRITE_DATA_tkeep    ),
     .WRITE_DATA_tlast        ( WRITE_DATA_tlast    ),
     .WRITE_DATA_tvalid       ( WRITE_DATA_tvalid   ),
-    .clk                     ( clk                 ),
+    .clk                     ( clk_out1                 ),
     .read_byte_num           ( read_byte_num       ),
     .read_dest_addr          ( read_dest_addr      ),
     .read_start              ( read_start          ),
-    .rst_n                   ( rst_n               ),
+    .rst_n                   ( locked               ),
     .write_byte_num          ( write_byte_num      ),
     .write_dest_addr         ( write_dest_addr     ),
     .write_start             ( write_start         ),
@@ -100,16 +107,16 @@ localparam WAIT = 7'b000_1000;
 localparam READ_CMD = 7'b001_0000;
 localparam READ_DATA = 7'b010_0000;
 localparam END = 7'b100_0000;
-always @(posedge clk ) begin
-    if(~rst_n)begin
+always @(posedge clk_out1 ) begin
+    if(~locked)begin
         current_state <= IDLE;
     end else begin
         current_state <= next_state;
     end
 end
 reg [3:0] start_cnt;
-always @(posedge clk ) begin
-    if(~rst_n)begin
+always @(posedge clk_out1 ) begin
+    if(~locked)begin
         start_cnt <= 4'd0;
     end else if(current_state == IDLE)begin
         start_cnt <= start_cnt + 1'b1;
@@ -119,8 +126,8 @@ always @(posedge clk ) begin
 end
 assign WRITE_DATA_tkeep = 1'b1;
 reg [31:0] write_cnt;
-always @(posedge clk ) begin
-    if(~rst_n)begin
+always @(posedge clk_out1 ) begin
+    if(~locked)begin
         write_cnt <= 32'd0;
     end else if(WRITE_DATA_tready & WRITE_DATA_tvalid)begin
         write_cnt <= write_cnt + 1'b1;
@@ -131,8 +138,8 @@ always @(posedge clk ) begin
     end
 end
 reg [31:0] read_cnt;
-always @(posedge clk ) begin
-    if(~rst_n)begin
+always @(posedge clk_out1 ) begin
+    if(~locked)begin
         read_cnt <= 32'd0;
     end else if(READ_DATA_tready & READ_DATA_tvalid)begin
         read_cnt <= read_cnt + 1'b1;
