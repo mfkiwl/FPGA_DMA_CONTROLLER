@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module LITE_CTRL (
+module LITE_WRITE__CTRL (
     input           clk                 ,
     input           rst                 ,
     
