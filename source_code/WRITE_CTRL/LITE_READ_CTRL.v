@@ -26,7 +26,7 @@ localparam END = 7'b100_0000;
 
 
 
-localparam WRITE_DMASR = 6'b10_0000;
+localparam DMASR = 8'h34;
 
 
 
@@ -103,7 +103,7 @@ always @(posedge clk ) begin
         m_axi_lite_araddr <= 10'd0;
     end
     else if (current_state == READ_ADDR) begin
-        m_axi_lite_araddr <= WRITE_DMASR;
+        m_axi_lite_araddr <= DMASR;
         m_axi_lite_arvalid <= 1'b1;
     end
     else begin
