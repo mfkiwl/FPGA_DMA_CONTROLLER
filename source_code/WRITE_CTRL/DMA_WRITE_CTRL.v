@@ -150,7 +150,7 @@ LITE_READ_CTRL  u_LITE_READ_CTRL (
     .m_axi_lite_arready      ( m_axi_lite_arready   ),
     .m_axi_lite_rresp        ( m_axi_lite_rresp     ),
     .m_axi_lite_rvalid       ( m_axi_lite_rvalid    ),
-    .start                   ( start                ),
+    .start                   ( start_q              ),
 
     .m_axi_lite_araddr       ( m_axi_lite_araddr    ),
     .m_axi_lite_arvalid      ( m_axi_lite_arvalid   ),

@@ -1,6 +1,10 @@
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_DMA_READ_CTRL_0_0/sim/design_1_DMA_READ_CTRL_0_0.v" \
-  "../../../bd/design_1/ip/design_1_DMA_WRITE_CTRL_0_0/sim/design_1_DMA_WRITE_CTRL_0_0.v" \
+-makelib xcelium_lib/xpm -sv \
+  "E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+  "E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/lib_pkg_v1_0_2 \
   "../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
@@ -65,13 +69,18 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+  "../../../bd/design_1/ip/design_1_DMA_WRITE_CTRL_0_0/sim/design_1_DMA_WRITE_CTRL_0_0.v" \
+  "../../../bd/design_1/ip/design_1_DMA_READ_CTRL_0_0/sim/design_1_DMA_READ_CTRL_0_0.v" \
 -endlib
 -makelib xcelium_lib/blk_mem_gen_v8_4_4 \
   "../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+  "../../../bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" \
   "../../../bd/design_1/sim/design_1.v" \
+  "../../../bd/design_1/ip/design_1_s00_data_fifo_0/sim/design_1_s00_data_fifo_0.v" \
+  "../../../bd/design_1/ip/design_1_s01_data_fifo_0/sim/design_1_s01_data_fifo_0.v" \
+  "../../../bd/design_1/ip/design_1_m00_data_fifo_0/sim/design_1_m00_data_fifo_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

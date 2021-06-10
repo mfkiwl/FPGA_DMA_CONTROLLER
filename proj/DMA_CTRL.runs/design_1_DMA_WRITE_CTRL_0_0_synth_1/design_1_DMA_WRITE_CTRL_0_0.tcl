@@ -81,6 +81,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.cache/wt [current_project]
 set_property parent.project_path D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.cache/ip [current_project]
@@ -88,11 +89,12 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.srcs/sources_1/imports/source_code/WRITE_CTRL/LITE_CTRL.v
-  D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.srcs/sources_1/imports/source_code/WRITE_CTRL/S2MM_CTRL.v
-  D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.srcs/sources_1/imports/source_code/WRITE_CTRL/DMA_WRITE_CTRL.v
+  D:/FPGA_DMA_CONTROLLER/source_code/WRITE_CTRL/LITE_READ_CTRL.v
+  D:/FPGA_DMA_CONTROLLER/source_code/WRITE_CTRL/LITE_WRITE_CTRL.v
+  D:/FPGA_DMA_CONTROLLER/source_code/WRITE_CTRL/S2MM_CTRL.v
+  D:/FPGA_DMA_CONTROLLER/source_code/WRITE_CTRL/DMA_WRITE_CTRL.v
 }
-read_ip -quiet d:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.srcs/sources_1/bd/design_1/ip/design_1_DMA_WRITE_CTRL_0_0/design_1_DMA_WRITE_CTRL_0_0.xci
+read_ip -quiet D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.srcs/sources_1/bd/design_1/ip/design_1_DMA_WRITE_CTRL_0_0/design_1_DMA_WRITE_CTRL_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

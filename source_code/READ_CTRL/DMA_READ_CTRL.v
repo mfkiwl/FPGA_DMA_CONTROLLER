@@ -91,6 +91,7 @@ module DMA_READ_CTRL(
         end
     end
 
+wire dma_idle;
 
 // MM2S_CTRL Inputs            
 wire   lite_end;
@@ -103,7 +104,7 @@ wire  lite_valid;
 MM2S_CTRL  u_MM2S_CTRL (
     .clk                     ( clk            ),
     .rst                     ( rst            ),
-    .start                   ( start_q        ),
+    .start                   ( dma_idle        ),
     .SA_DATA                 ( SA             ),
     .MSB_DATA                ( MSB            ),
     .LENGTH_DATA             ( len            ),
@@ -118,7 +119,7 @@ MM2S_CTRL  u_MM2S_CTRL (
 
 
 
-LITE_CTRL  u_LITE_CTRL (
+LITE_WRITE_CTRL  u_LITE_WRITE_CTRL (
     .clk                     ( clk                  ),
     .rst                     ( rst                  ),
     .lite_wdata              ( lite_wdata           ),
@@ -128,22 +129,28 @@ LITE_CTRL  u_LITE_CTRL (
     .m_axi_lite_wready       ( m_axi_lite_wready    ),
     .m_axi_lite_bresp        ( m_axi_lite_bresp     ),
     .m_axi_lite_bvalid       ( m_axi_lite_bvalid    ),
-    .m_axi_lite_rdata        ( m_axi_lite_rdata     ),
-    .m_axi_lite_arready      ( m_axi_lite_arready   ),
-    .m_axi_lite_rresp        ( m_axi_lite_rresp     ),
-    .m_axi_lite_rvalid       ( m_axi_lite_rvalid    ),
 
     .lite_end                ( lite_end             ),
     .m_axi_lite_awaddr       ( m_axi_lite_awaddr    ),
     .m_axi_lite_wdata        ( m_axi_lite_wdata     ),
     .m_axi_lite_awvalid      ( m_axi_lite_awvalid   ),
     .m_axi_lite_wvalid       ( m_axi_lite_wvalid    ),
-    .m_axi_lite_bready       ( m_axi_lite_bready    ),
+    .m_axi_lite_bready       ( m_axi_lite_bready    )
+);
+
+LITE_READ_CTRL  u_LITE_READ_CTRL (
+    .clk                     ( clk                  ),
+    .rst                     ( rst                  ),
+    .start                   ( start_q              ),
+    .m_axi_lite_rdata        ( m_axi_lite_rdata     ),
+    .m_axi_lite_arready      ( m_axi_lite_arready   ),
+    .m_axi_lite_rresp        ( m_axi_lite_rresp     ),
+    .m_axi_lite_rvalid       ( m_axi_lite_rvalid    ),
+
+    .dma_idle                ( dma_idle             ),
     .m_axi_lite_araddr       ( m_axi_lite_araddr    ),
     .m_axi_lite_arvalid      ( m_axi_lite_arvalid   ),
     .m_axi_lite_rready       ( m_axi_lite_rready    )
 );
-
-
 
 endmodule

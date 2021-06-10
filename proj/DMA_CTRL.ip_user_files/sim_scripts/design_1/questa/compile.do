@@ -1,7 +1,7 @@
 vlib questa_lib/work
 vlib questa_lib/msim
 
-vlib questa_lib/msim/xil_defaultlib
+vlib questa_lib/msim/xpm
 vlib questa_lib/msim/lib_pkg_v1_0_2
 vlib questa_lib/msim/fifo_generator_v13_2_5
 vlib questa_lib/msim/lib_fifo_v1_0_14
@@ -10,6 +10,7 @@ vlib questa_lib/msim/lib_cdc_v1_0_2
 vlib questa_lib/msim/axi_datamover_v5_1_24
 vlib questa_lib/msim/axi_sg_v4_1_13
 vlib questa_lib/msim/axi_dma_v7_1_23
+vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/axi_bram_ctrl_v4_1_4
 vlib questa_lib/msim/generic_baseblocks_v2_1_0
 vlib questa_lib/msim/axi_infrastructure_v1_1_0
@@ -19,7 +20,7 @@ vlib questa_lib/msim/axi_crossbar_v2_1_23
 vlib questa_lib/msim/util_vector_logic_v2_0_1
 vlib questa_lib/msim/blk_mem_gen_v8_4_4
 
-vmap xil_defaultlib questa_lib/msim/xil_defaultlib
+vmap xpm questa_lib/msim/xpm
 vmap lib_pkg_v1_0_2 questa_lib/msim/lib_pkg_v1_0_2
 vmap fifo_generator_v13_2_5 questa_lib/msim/fifo_generator_v13_2_5
 vmap lib_fifo_v1_0_14 questa_lib/msim/lib_fifo_v1_0_14
@@ -28,6 +29,7 @@ vmap lib_cdc_v1_0_2 questa_lib/msim/lib_cdc_v1_0_2
 vmap axi_datamover_v5_1_24 questa_lib/msim/axi_datamover_v5_1_24
 vmap axi_sg_v4_1_13 questa_lib/msim/axi_sg_v4_1_13
 vmap axi_dma_v7_1_23 questa_lib/msim/axi_dma_v7_1_23
+vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap axi_bram_ctrl_v4_1_4 questa_lib/msim/axi_bram_ctrl_v4_1_4
 vmap generic_baseblocks_v2_1_0 questa_lib/msim/generic_baseblocks_v2_1_0
 vmap axi_infrastructure_v1_1_0 questa_lib/msim/axi_infrastructure_v1_1_0
@@ -37,9 +39,13 @@ vmap axi_crossbar_v2_1_23 questa_lib/msim/axi_crossbar_v2_1_23
 vmap util_vector_logic_v2_0_1 questa_lib/msim/util_vector_logic_v2_0_1
 vmap blk_mem_gen_v8_4_4 questa_lib/msim/blk_mem_gen_v8_4_4
 
-vlog -work xil_defaultlib  "+incdir+../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"../../../bd/design_1/ip/design_1_DMA_READ_CTRL_0_0/sim/design_1_DMA_READ_CTRL_0_0.v" \
-"../../../bd/design_1/ip/design_1_DMA_WRITE_CTRL_0_0/sim/design_1_DMA_WRITE_CTRL_0_0.v" \
+vlog -work xpm  -sv "+incdir+../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+vcom -work xpm  -93 \
+"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work lib_pkg_v1_0_2  -93 \
 "../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
@@ -104,13 +110,18 @@ vlog -work util_vector_logic_v2_0_1  "+incdir+../../../../DMA_CTRL.gen/sources_1
 
 vlog -work xil_defaultlib  "+incdir+../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+"../../../bd/design_1/ip/design_1_DMA_WRITE_CTRL_0_0/sim/design_1_DMA_WRITE_CTRL_0_0.v" \
+"../../../bd/design_1/ip/design_1_DMA_READ_CTRL_0_0/sim/design_1_DMA_READ_CTRL_0_0.v" \
 
 vlog -work blk_mem_gen_v8_4_4  "+incdir+../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
 
 vlog -work xil_defaultlib  "+incdir+../../../../DMA_CTRL.gen/sources_1/bd/design_1/ipshared/ec67/hdl" \
-"../../../bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" \
+"../../../bd/design_1/ip/design_1_blk_mem_gen_0_1/sim/design_1_blk_mem_gen_0_1.v" \
 "../../../bd/design_1/sim/design_1.v" \
+"../../../bd/design_1/ip/design_1_s00_data_fifo_0/sim/design_1_s00_data_fifo_0.v" \
+"../../../bd/design_1/ip/design_1_s01_data_fifo_0/sim/design_1_s01_data_fifo_0.v" \
+"../../../bd/design_1/ip/design_1_m00_data_fifo_0/sim/design_1_m00_data_fifo_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

@@ -78,7 +78,7 @@ design_1_xbar_0_sc::design_1_xbar_0_sc(const sc_core::sc_module_name& nm) : sc_c
     model_param_props.addLong("C_CONNECTIVITY_MODE", "1");
     model_param_props.addString("C_FAMILY", "kintex7");
     model_param_props.addBitString("C_M_AXI_BASE_ADDR", "0000000000000000000000000000000011000000000000000000000000000000", 64);
-    model_param_props.addBitString("C_M_AXI_ADDR_WIDTH", "00000000000000000000000000001101", 32);
+    model_param_props.addBitString("C_M_AXI_ADDR_WIDTH", "00000000000000000000000000001100", 32);
     model_param_props.addBitString("C_S_AXI_BASE_ID", "0000000000000000000000000000000100000000000000000000000000000000", 64);
     model_param_props.addBitString("C_S_AXI_THREAD_ID_WIDTH", "0000000000000000000000000000000000000000000000000000000000000000", 64);
     model_param_props.addBitString("C_M_AXI_WRITE_CONNECTIVITY", "00000000000000000000000000000010", 32);

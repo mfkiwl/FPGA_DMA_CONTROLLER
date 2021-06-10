@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat May 29 22:05:48 2021
+| Date         : Thu Jun 10 21:38:05 2021
 | Host         : LAPTOP-POK8F54O running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_DMA_WRITE_CTRL_0_0_utilization_synth.rpt -pb design_1_DMA_WRITE_CTRL_0_0_utilization_synth.pb
 | Design       : design_1_DMA_WRITE_CTRL_0_0
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   64 |     0 |    203800 |  0.03 |
-|   LUT as Logic          |   64 |     0 |    203800 |  0.03 |
+| Slice LUTs*             |   85 |     0 |    203800 |  0.04 |
+|   LUT as Logic          |   85 |     0 |    203800 |  0.04 |
 |   LUT as Memory         |    0 |     0 |     64000 |  0.00 |
-| Slice Registers         |  150 |     0 |    407600 |  0.04 |
-|   Register as Flip Flop |  150 |     0 |    407600 |  0.04 |
+| Slice Registers         |  162 |     0 |    407600 |  0.04 |
+|   Register as Flip Flop |  162 |     0 |    407600 |  0.04 |
 |   Register as Latch     |    0 |     0 |    407600 |  0.00 |
 | F7 Muxes                |    0 |     0 |    101900 |  0.00 |
 | F8 Muxes                |    0 |     0 |     50950 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 2     |          Yes |         Set |            - |
-| 148   |          Yes |       Reset |            - |
+| 3     |          Yes |         Set |            - |
+| 159   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,13 +151,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  148 |        Flop & Latch |
-| LUT6     |   44 |                 LUT |
-| LUT5     |   13 |                 LUT |
-| LUT4     |    9 |                 LUT |
-| LUT2     |    7 |                 LUT |
-| LUT3     |    3 |                 LUT |
-| FDSE     |    2 |        Flop & Latch |
+| FDRE     |  159 |        Flop & Latch |
+| LUT6     |   49 |                 LUT |
+| LUT5     |   23 |                 LUT |
+| LUT4     |   18 |                 LUT |
+| LUT3     |    7 |                 LUT |
+| LUT2     |    6 |                 LUT |
+| FDSE     |    3 |        Flop & Latch |
 +----------+------+---------------------+
 
 

@@ -44,8 +44,8 @@ module S2MM_CTRL(
     localparam MSB = 8'h4C;
     localparam LENGTH = 8'h58;
 
-    localparam DMACR_DATA = 32'b0000_0001_0000_0001_0001_0000_0000_0101;
-    localparam DMASR_DATE = 32'b0000_0001_0000_0001_0001_0000_0000_0000;
+    localparam DMACR_DATA = 32'b0000_0000_0000_0001_0001_0000_0000_0011;
+    localparam DMASR_DATE = 32'b0000_0000_0000_0001_0001_0000_0000_0000;
 
     reg [5:0] current_state;
     reg [5:0] next_state;

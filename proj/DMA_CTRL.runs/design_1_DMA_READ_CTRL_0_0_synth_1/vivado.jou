@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat May 29 22:04:12 2021
-# Process ID: 3924
+# Start of session at: Thu Jun 10 21:37:21 2021
+# Process ID: 9656
 # Current directory: D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.runs/design_1_DMA_READ_CTRL_0_0_synth_1
 # Command line: vivado.exe -log design_1_DMA_READ_CTRL_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_DMA_READ_CTRL_0_0.tcl
 # Log file: D:/FPGA_DMA_CONTROLLER/proj/DMA_CTRL.runs/design_1_DMA_READ_CTRL_0_0_synth_1/design_1_DMA_READ_CTRL_0_0.vds

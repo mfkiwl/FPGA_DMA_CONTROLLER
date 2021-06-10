@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module LITE_READ_CTRL (
            input clk,
            input rst,
@@ -78,7 +79,7 @@ always @( * ) begin
         end
         WAIT: begin
             if (ready) begin
-                if (dma_state[0: 0] == 1'b1 && dma_state[1: 0] == 2'b10) begin
+                if (dma_state[0: 0] == 1'b1 || dma_state[1: 0] == 2'b10) begin
                     next_state = END;
                 end
                 else begin
